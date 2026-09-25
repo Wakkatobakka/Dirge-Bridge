@@ -1,0 +1,47 @@
+# Build outputs
+/build/
+/dist/
+/baseline/
+/signing/
+*.apk
+*.aab
+*.dex
+*.class
+*.jar
+
+# Signing material / secrets
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.env
+.env*
+
+# Lost Episode private/copyrighted game payload
+*Private_Data*.zip
+Final_Fantasy_7_-_Dirge_of_Cerberus_-_Lost_Episode_doja.zip
+DoCLE-Eng*.xdelta
+game.dex
+game.jam
+game.jar
+game.sp
+PACK*.JAR
+/sd/
+/private-data/
+/game-data/
+
+# Device reports / recordings / local scratch unless intentionally reviewed
+*-report*.txt
+*.mp4
+*.mov
+*.mkv
+*.log
+
+# Local Python/editor clutter
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
