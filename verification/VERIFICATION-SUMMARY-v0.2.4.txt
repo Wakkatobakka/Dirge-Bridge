@@ -36,7 +36,7 @@ Tests
 APK
 - Version: 0.2.4 (versionCode 15)
 - SHA-256: 7f307dcec4eabf765953aac9001e0891c4d7178609e397727d316387d5be21a3
-- Device execution: not yet performed for v0.2.4.
+- Device execution confirmed on Samsung Galaxy S25 Ultra / Android 16. Independent Weapon Aim left/right control works as intended.
 
 Physical-device test target
 1. Enter first-person normally with Action.
