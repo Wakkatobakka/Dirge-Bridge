@@ -1,0 +1,1 @@
+package com.wakka.dirge.core; public final class PadInput {public PadInput(ControlLayout l){}public void clear(){}public void down(int i,float x,float y){}public void move(int i,float x,float y){}public void up(int i){}public int mask(){return 0;}}

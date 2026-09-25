@@ -1,0 +1,20 @@
+DIRGE BRIDGE v0.2.4 — PRESERVATION
+
+Purpose
+- Preserves the v0.2.4 bounded Weapon Aim repair.
+- Built from the exact v0.2.3 APK baseline.
+- Only TwinInput + TwinInput$Contact are replaced in the runtime DEX.
+
+Important fix
+- A compile-only CameraAssist stub had stale synthetic PAD_* bit numbers and javac inlined them into TwinInput. This could make right Weapon Aim behave as left or disappear.
+- v0.2.4 makes those compile-only PAD_* fields non-final runtime reads and aligns their values with the actual CameraAssist runtime.
+- The failed v0.2.3 Action -> Aim ownership transfer is removed. Action and Weapon Aim are separate controls again.
+
+Preserved behavior
+- Gothic/Wakkan launcher shell from v0.2.2/v0.2.3.
+- English text patch importer/runtime.
+- Working Japanese voice/music/SFX audio, short-SFX completion repair, and synchronized pause/resume.
+- Compact 4-way movement, roll assist, field camera, native horizontal right-thumb aim architecture.
+- Original game checkpoints/backups.
+
+Private/copyrighted Lost Episode game payload is NOT included.

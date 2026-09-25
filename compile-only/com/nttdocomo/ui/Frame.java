@@ -1,0 +1,1 @@
+package com.nttdocomo.ui;public class Frame { public Frame(){} }

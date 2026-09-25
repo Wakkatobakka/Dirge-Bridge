@@ -1,0 +1,1 @@
+package com.wakka.dirge.core; public final class Diag {public static void event(String k,String m){} }

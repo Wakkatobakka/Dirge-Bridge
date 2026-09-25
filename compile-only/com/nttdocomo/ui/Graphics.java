@@ -1,0 +1,1 @@
+package com.nttdocomo.ui; public class Graphics {public Graphics(){}public void lock(){}public void unlock(boolean b){} }

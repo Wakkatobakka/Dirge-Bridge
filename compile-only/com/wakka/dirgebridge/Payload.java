@@ -1,0 +1,1 @@
+package com.wakka.dirgebridge; import android.content.*;import android.net.Uri;import java.io.*; final class Payload {Payload(Context c)throws IOException{} boolean installed(Context c){return false;} void importZip(Context c,Uri u)throws Exception{} static File root(Context c){return null;}}

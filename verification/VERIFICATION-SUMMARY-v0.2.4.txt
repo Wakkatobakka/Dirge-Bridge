@@ -1,0 +1,46 @@
+DIRGE BRIDGE v0.2.4 — VERIFICATION SUMMARY
+
+Scope
+- Bounded Weapon Aim repair only.
+- Removed the failed v0.2.3 Action -> Weapon Aim pointer handoff.
+- Weapon Aim / Field Camera is again an independent touch control.
+- Baseline APK: exact v0.2.3 device-tested build.
+- Only TwinInput and TwinInput$Contact are replaced in classes.dex.
+
+Root cause found
+- The compile-only CameraAssist stub used stale synthetic pad IDs:
+  PAD_LEFT=23, PAD_RIGHT=24 (and the rest shifted similarly).
+- The actual runtime CameraAssist uses PAD_LEFT=24, PAD_RIGHT=26, PAD_UP=25, PAD_DOWN=27.
+- Because the old stub exposed those IDs as static-final constants, javac inlined the stale numbers into TwinInput. The right side of Weapon Aim could therefore be interpreted by the runtime as LEFT, while another direction could be ignored.
+- v0.2.4 makes the compile-only PAD_* fields non-final runtime reads and aligns their documented values with the runtime.
+- javap verification confirms TwinInput bytecode uses getstatic CameraAssist.PAD_LEFT and getstatic CameraAssist.PAD_RIGHT rather than inlined integer constants.
+
+Control behavior
+- Action remains independent.
+- Weapon Aim / Field Camera remains horizontal-only.
+- In first-person, the Weapon Aim strip feeds the same native left/right aim bridge already proven by the game.
+- Vertical right-thumb drift remains ignored.
+- Compact 4-way left D-pad, roll assist, field camera behavior, launcher shell, saves, renderer and audio are inherited unchanged from v0.2.3.
+
+Tests
+- Twin controls: 6,433 assertions passed.
+- Camera/input: 39 assertions passed.
+- MLD title decode known PCM hash passed.
+- 8 kHz -> 48 kHz resampler: 17 assertions passed.
+- Short-stream padding: 10 assertions passed.
+- APK signature verified; signer matches prior builds.
+- APK zip alignment verified.
+- Android permissions declared: 0.
+- Game-data allowlist unchanged.
+
+APK
+- Version: 0.2.4 (versionCode 15)
+- SHA-256: 7f307dcec4eabf765953aac9001e0891c4d7178609e397727d316387d5be21a3
+- Device execution: not yet performed for v0.2.4.
+
+Physical-device test target
+1. Enter first-person normally with Action.
+2. Lift from Action.
+3. Touch/hold the RIGHT half of Weapon Aim: weapon should aim right.
+4. Touch/hold the LEFT half: weapon should aim left.
+5. No Action-to-Aim slide gesture is expected or required.

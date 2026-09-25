@@ -1,0 +1,1 @@
+package com.wakka.dirge.core; import java.io.*; public final class SaveVault {public SaveVault(File f){} public void exportTo(OutputStream o)throws IOException{} public void restore(InputStream i)throws IOException{} public void restoreLastBackup()throws IOException{} public String summary(){return "";}}

@@ -1,0 +1,13 @@
+{
+  "apk": "/mnt/data/dirge_v024_work/Dirge_Bridge_v0.2.4_work/dist/Dirge_Bridge_v0.2.4.apk",
+  "size": 86571,
+  "sha256": "7f307dcec4eabf765953aac9001e0891c4d7178609e397727d316387d5be21a3",
+  "baseline_sha256": "0c5c07c9f81ed1664362ec59b35677b8c736c8f799fae1384b6195626c21fa34",
+  "same_signer": true,
+  "signer_sha256": "3959e54e02b70c10e8c1d1e3bb0fd4fc684d2364c6cfb6d0327567f1d887e99e",
+  "same_payload_allowlist": true,
+  "permissions_declared": 0,
+  "version": "0.2.4",
+  "scope": "bounded Weapon Aim bit-bridge repair; remove Action-to-aim handoff; all v0.2.3 shell/runtime/audio otherwise preserved",
+  "device_execution": "Not yet performed for v0.2.4"
+}

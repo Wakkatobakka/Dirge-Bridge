@@ -1,0 +1,1 @@
+package com.wakka.dirgebridge; public class GameActivity extends android.app.Activity {void showModal(android.app.AlertDialog d){} }

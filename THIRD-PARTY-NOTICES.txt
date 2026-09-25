@@ -1,0 +1,12 @@
+Dirge Bridge v0.2.0 — Third-Party Notice
+
+G.726 / G.723-16 ADPCM algorithm
+--------------------------------
+The G72616.java decoder is a Java port of the classic Sun Microsystems
+g72x/g723_16 reference algorithm. The reference implementation's notice states
+that the material was developed by Sun Microsystems, Inc., is provided for
+unrestricted use, and that users may copy or modify it without charge.
+
+The port is included solely to decode the 2-bit ADPM audio streams already
+present in a user's legally obtained Lost Episode game data. No game audio is
+included in the redistributable bridge or preservation package.
