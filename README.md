@@ -23,7 +23,7 @@ A few weeks later, I was thinking about wanting to play *Blue Dragon* on my phon
 
 So I tried it.
 
-I’m not a professional developer. I work as a corrections officer. I like Vincent, I think old games are cool, and I enjoy messing around with technology and seeing what I can make work. That was about the full extent of the grand plan.
+I’m not a professional developer. I like Vincent, I think old games are cool, and I enjoy messing around with technology and seeing what I can make work. That was about the full extent of the grand plan.
 
 Roughly twenty hours after starting, *Lost Episode* was running on my modern Android phone with graphics, audio, English translation support, touchscreen controls, and a launcher that made the whole thing feel like an actual usable application instead of a technical experiment.
 
