@@ -1,1 +1,1 @@
-7f307dcec4eabf765953aac9001e0891c4d7178609e397727d316387d5be21a3  /mnt/data/dirge_v024_work/Dirge_Bridge_v0.2.4_work/dist/Dirge_Bridge_v0.2.4.apk
+7f307dcec4eabf765953aac9001e0891c4d7178609e397727d316387d5be21a3  Dirge_Bridge_v0.2.4.apk
