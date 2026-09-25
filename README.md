@@ -45,23 +45,24 @@ The current release has been tested on a Samsung Galaxy S25 Ultra running Androi
 
 ## Preparing the game-data ZIP
 
-Dirge Bridge does not include Lost Episode game data.
+Dirge Bridge does not include Lost Episode game data or the DoCLE translation patch.
 
-If your compatible English data set is missing `game.dex`, download **Dirge Bridge Payload Builder v0.1.0** from the v0.2.4 release assets.
+If you are starting from the recovered original Japanese game data, download **Dirge Bridge Payload Builder v0.2.0** from the v0.2.4 release assets.
 
-The builder works locally from your own verified English-patched `game.jar`, `game.jam`, `game.sp`, and the 15 SD `PACK*.JAR` files. It generates `game.dex`, verifies all 19 files against the Dirge Bridge v0.2.4 importer allowlist, and creates the ZIP that Dirge Bridge can import.
+The builder works locally from your own compatible game data and your own `DoCLE-Eng1.0.xdelta` patch. It applies the English patch, generates `game.dex`, verifies the exact 19-file payload Dirge Bridge expects, and creates the finished import ZIP.
 
 On Windows:
 
 1. Extract the Payload Builder ZIP.
 2. Double-click `RUN-PAYLOAD-BUILDER-WINDOWS.bat`.
-3. Select the ZIPs or folders containing your compatible Lost Episode data.
-4. Choose where to save the finished package.
-5. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` in Dirge Bridge.
+3. Select the ZIPs/folders containing your Lost Episode data.
+4. Choose **Yes** when asked if you are starting from the original Japanese game JAR, then select your own `DoCLE-Eng1.0.xdelta` file.
+5. Choose where to save the finished package.
+6. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` in Dirge Bridge.
 
 Android SDK Platform 35 and Android SDK Build-Tools 35.0.0 are required. Android Studio's SDK Manager is the easiest way to install them.
 
-The builder does not upload your files, alter your originals, or include any Lost Episode game data itself.
+On first run, the Windows launcher fetches the official xdelta3 3.2.0 helper from `jmacd/xdelta` and verifies its release archive before use. No game data or translation patch is downloaded or uploaded by the builder.
 
 ## Important boundaries
 
