@@ -11,6 +11,26 @@ The v0.2.4 line has been device-tested on a Samsung Galaxy S25 Ultra / Android 1
 
 This repository contains the bridge source and build-support material only. **No Lost Episode game files are included.**
 
+## Why Dirge Bridge exists
+
+Several weeks before this project started, I read about Yuvi’s work recovering *Final Fantasy VII: Dirge of Cerberus – Lost Episode* from an old SD card.
+
+I thought the recovery itself was incredible. I also looked at the process required to actually play the game and thought, basically, “that is way more complicated than I would want it to be.”
+
+Then I forgot about it for a bit.
+
+A few weeks later, I was thinking about wanting to play *Blue Dragon* on my phone and wondering if anyone had used AI to do something like that yet. That made me remember *Lost Episode* — and that I had access to AI.
+
+So I tried it.
+
+I’m not a professional developer. I work as a corrections officer. I like Vincent, I think old games are cool, and I enjoy messing around with technology and seeing what I can make work. That was about the full extent of the grand plan.
+
+Roughly twenty hours after starting, *Lost Episode* was running on my modern Android phone with graphics, audio, English translation support, touchscreen controls, and a launcher that made the whole thing feel like an actual usable application instead of a technical experiment.
+
+That became Dirge Bridge.
+
+None of this replaces the recovery, preservation, translation, or research work that came before it. Without that work, there would have been nothing for me to build around. Dirge Bridge is simply my attempt to make the last step much easier: give it your own compatible game data, install the app, and play.
+
 ## Quick start
 
 1. Open the **Releases** section and download the latest `Dirge_Bridge_*.apk`.
