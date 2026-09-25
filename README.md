@@ -43,6 +43,26 @@ Dirge Bridge does not include the Lost Episode game files. Users must supply the
 
 The current release has been tested on a Samsung Galaxy S25 Ultra running Android 16. Compatibility with other Android devices and Android versions is not yet fully documented.
 
+## Preparing the game-data ZIP
+
+Dirge Bridge does not include Lost Episode game data.
+
+If your compatible English data set is missing `game.dex`, download **Dirge Bridge Payload Builder v0.1.0** from the v0.2.4 release assets.
+
+The builder works locally from your own verified English-patched `game.jar`, `game.jam`, `game.sp`, and the 15 SD `PACK*.JAR` files. It generates `game.dex`, verifies all 19 files against the Dirge Bridge v0.2.4 importer allowlist, and creates the ZIP that Dirge Bridge can import.
+
+On Windows:
+
+1. Extract the Payload Builder ZIP.
+2. Double-click `RUN-PAYLOAD-BUILDER-WINDOWS.bat`.
+3. Select the ZIPs or folders containing your compatible Lost Episode data.
+4. Choose where to save the finished package.
+5. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` in Dirge Bridge.
+
+Android SDK Platform 35 and Android SDK Build-Tools 35.0.0 are required. Android Studio's SDK Manager is the easiest way to install them.
+
+The builder does not upload your files, alter your originals, or include any Lost Episode game data itself.
+
 ## Important boundaries
 
 Do not commit or upload:
