@@ -11,6 +11,18 @@ The v0.2.4 line has been device-tested on a Samsung Galaxy S25 Ultra / Android 1
 
 This repository contains the bridge source and build-support material only. **No Lost Episode game files are included.**
 
+## Quick start
+
+1. Open the **Releases** section and download the latest `Dirge_Bridge_*.apk`.
+2. Install the APK on your Android device.
+3. Open Dirge Bridge.
+4. Choose **Import English game data ZIP** and select your own legally obtained, compatible Lost Episode data package.
+5. After the import is verified, choose **Enter Lost Episode**.
+
+Dirge Bridge does not include the Lost Episode game files. Users must supply their own compatible game data.
+
+The current release has been tested on a Samsung Galaxy S25 Ultra running Android 16. Compatibility with other Android devices and Android versions is not yet fully documented.
+
 ## Important boundaries
 
 Do not commit or upload:
