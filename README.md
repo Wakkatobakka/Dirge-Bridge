@@ -49,11 +49,16 @@ The current release has been tested on a Samsung Galaxy S25 Ultra running Androi
 
 Dirge Bridge does not include Lost Episode game data or the DoCLE translation patch.
 
-If you are getting your Lost Episode files through Keitai World Launcher, download both of the following:
+If you are getting your Lost Episode files through **Keitai World Launcher**, you can get the launcher here:
 
-  1.The original Japanese Final Fantasy VII: Dirge of Cerberus – Lost Episode game package.
+[Keitai Archive](https://keitaiarchive.org/)
 
-  2. Its separate SD Card Data download.
+[Download Keitai World Launcher](https://keitaiarchive.org/downloads.html)
+
+Once Keitai World Launcher is installed, download both of the following:
+
+1. The original Japanese **Final Fantasy VII: Dirge of Cerberus – Lost Episode** game package.
+2. Its separate **SD Card Data** download.
 
 You need both. The main game package contains the .jar, .jam, and .sp files, while the SD Card Data contains the additional game data required by Lost Episode.
 
