@@ -47,7 +47,17 @@ The current release has been tested on a Samsung Galaxy S25 Ultra running Androi
 
 Dirge Bridge does not include Lost Episode game data or the DoCLE translation patch.
 
-If you are starting from the recovered original Japanese game data, download **Dirge Bridge Payload Builder v0.2.0** from the v0.2.4 release assets.
+If you are getting your Lost Episode files through Keitai World Launcher, download both of the following:
+
+  1.The original Japanese Final Fantasy VII: Dirge of Cerberus – Lost Episode game package.
+
+  2. Its separate SD Card Data download.
+
+You need both. The main game package contains the .jar, .jam, and .sp files, while the SD Card Data contains the additional game data required by Lost Episode.
+
+Keep both downloads as ZIPs/folders. You do not need to manually combine or rearrange their contents — the Payload Builder will collect the required files for you.
+
+Once you have both downloads, download Dirge Bridge Payload Builder v0.2.0 from the v0.2.4 release assets.
 
 The builder works locally from your own compatible game data and your own `DoCLE-Eng1.0.xdelta` patch. It applies the English patch, generates `game.dex`, verifies the exact 19-file payload Dirge Bridge expects, and creates the finished import ZIP.
 
@@ -55,7 +65,7 @@ On Windows:
 
 1. Extract the Payload Builder ZIP.
 2. Double-click `RUN-PAYLOAD-BUILDER-WINDOWS.bat`.
-3. Select the ZIPs/folders containing your Lost Episode data.
+3. Select both Lost Episode downloads from Keitai World: the main game package and the SD Card Data ZIP/folder.
 4. Choose **Yes** when asked if you are starting from the original Japanese game JAR, then select your own `DoCLE-Eng1.0.xdelta` file.
 5. Choose where to save the finished package.
 6. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` in Dirge Bridge.
