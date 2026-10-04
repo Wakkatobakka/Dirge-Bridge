@@ -1,3 +1,5 @@
+![Dirge Bridge](Dirge_Bridge_GitHub.jpg)
+
 # Dirge Bridge
 
 Dirge Bridge is an independent Android compatibility bridge for running a user's own legally obtained copy of **Final Fantasy VII: Dirge of Cerberus – Lost Episode** on modern Android hardware.
