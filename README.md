@@ -1,124 +1,72 @@
+
 ![Dirge Bridge](Dirge_Bridge_GitHub.jpg)
 
 # Dirge Bridge
 
-Dirge Bridge is an independent Android compatibility bridge for running a user's own legally obtained copy of **Final Fantasy VII: Dirge of Cerberus – Lost Episode** on modern Android hardware.
-
-**Current repository baseline:** v0.2.4  
-**Package:** `com.wakka.dirgebridge`
-
-## Current status
-
-The v0.2.4 line has been device-tested on a Samsung Galaxy S25 Ultra / Android 16 with working rendering, touch controls, English text support, music/voice/SFX playback, checkpoint persistence support, pause-synchronized audio, field-camera control, and native horizontal weapon aiming.
-
-This repository contains the bridge source and build-support material only. **No Lost Episode game files are included.**
-
-## Why Dirge Bridge exists
-
-Several weeks before this project started, I read about Yuvi’s work recovering *Final Fantasy VII: Dirge of Cerberus – Lost Episode* from an old SD card.
-
-I thought the recovery itself was incredible. I also looked at the process required to actually play the game and thought, basically, “that is way more complicated than I would want it to be.”
-
-Then I forgot about it for a bit.
-
-A few weeks later, I was thinking about wanting to play *Blue Dragon* on my phone and wondering if anyone had used AI to do something like that yet. That made me remember *Lost Episode* — and that I had access to AI.
-
-So I tried it.
-
-I’m not a professional developer. I like Vincent, I think old games are cool, and I enjoy messing around with technology and seeing what I can make work. That was about the full extent of the grand plan.
-
-Roughly twenty hours after starting, *Lost Episode* was running on my modern Android phone with graphics, audio, English translation support, touchscreen controls, and a launcher that made the whole thing feel like an actual usable application instead of a technical experiment.
-
-That became Dirge Bridge.
-
-None of this replaces the recovery, preservation, translation, or research work that came before it. Without that work, there would have been nothing for me to build around. Dirge Bridge is simply my attempt to make the last step much easier: give it your own compatible game data, install the app, and play.
+Dirge Bridge is an independent Android compatibility project that makes **Final Fantasy VII: Dirge of Cerberus – Lost Episode** playable on modern Android devices, with English text, audio, and touchscreen controls.
 
 ## Quick start
 
-1. Open the **Releases** section and download the latest `Dirge_Bridge_*.apk`.
+1. Open the [Releases](https://github.com/Wakkatobakka/Dirge-Bridge/releases/tag/v0.2.4) page and download `Dirge_Bridge_v0.2.4.apk`.
 2. Install the APK on your Android device.
-3. Open Dirge Bridge.
-4. Choose **Import English game data ZIP** and select your own legally obtained, compatible Lost Episode data package.
-5. After the import is verified, choose **Enter Lost Episode**.
+3. Prepare your English game-data ZIP using the instructions below.
+4. Open Dirge Bridge and choose **Import English game data ZIP**.
+5. Select your prepared ZIP.
+6. Once the import is verified, choose **Enter Lost Episode**.
 
-Dirge Bridge does not include the Lost Episode game files. Users must supply their own compatible game data.
-
-The current release has been tested on a Samsung Galaxy S25 Ultra running Android 16. Compatibility with other Android devices and Android versions is not yet fully documented.
+**Note:** Dirge Bridge does not include the original game files. You will need compatible Lost Episode game data.
 
 ## Preparing the game-data ZIP
 
-Dirge Bridge does not include Lost Episode game data or the DoCLE translation patch.
-
-If you are getting your Lost Episode files through **Keitai World Launcher**, you can get the launcher here:
+You can obtain the original Lost Episode files through **Keitai World Launcher**.
 
 [Keitai Archive](https://keitaiarchive.org/)
 
 [Download Keitai World Launcher](https://keitaiarchive.org/downloads.html)
 
-Once Keitai World Launcher is installed, download both of the following:
+Once installed, download both:
 
-1. The original Japanese **Final Fantasy VII: Dirge of Cerberus – Lost Episode** game package.
-2. Its separate **SD Card Data** download.
+1. **Final Fantasy VII: Dirge of Cerberus – Lost Episode** (original Japanese game package).
+2. The separate **SD Card Data** download.
 
-You need both. The main game package contains the .jar, .jam, and .sp files, while the SD Card Data contains the additional game data required by Lost Episode.
+Keep both downloads as ZIPs or folders. You don't need to combine them manually.
 
-Keep both downloads as ZIPs/folders. You do not need to manually combine or rearrange their contents — the Payload Builder will collect the required files for you.
+You'll also need the English translation patch:
 
-Once you have both downloads, download Dirge Bridge Payload Builder v0.2.0 from the v0.2.4 release assets.
+[Lost Episode English Translation – Yuvi / TurquoiseHammer](https://github.com/Yuvi-App/DoC-LE-English-Translation)
 
-The builder works locally from your own compatible game data and your own `DoCLE-Eng1.0.xdelta` patch. It applies the English patch, generates `game.dex`, verifies the exact 19-file payload Dirge Bridge expects, and creates the finished import ZIP.
+### Build your import ZIP (Windows)
 
-On Windows:
+Download **Dirge Bridge Payload Builder v0.2.1** from the [v0.2.4 release](https://github.com/Wakkatobakka/Dirge-Bridge/releases/tag/v0.2.4).
+
+Before running the builder, install Android SDK Platform 35 and Android SDK Build-Tools 35.0.0 using Android Studio's SDK Manager.
 
 1. Extract the Payload Builder ZIP.
 2. Double-click `RUN-PAYLOAD-BUILDER-WINDOWS.bat`.
-3. Select both Lost Episode downloads from Keitai World: the main game package and the SD Card Data ZIP/folder.
-4. Choose **Yes** when asked if you are starting from the original Japanese game JAR, then select your own `DoCLE-Eng1.0.xdelta` file.
+3. Select your original Lost Episode game package and SD Card Data download.
+4. Choose **Yes** when asked if you're starting from the original Japanese game, then select your `DoCLE-Eng1.0.xdelta` translation patch.
 5. Choose where to save the finished package.
-6. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` in Dirge Bridge.
+6. Import the generated `Dirge_Lost_Episode_English_Data_for_Dirge_Bridge_v0.2.4.zip` into Dirge Bridge on your Android device.
 
-Android SDK Platform 35 and Android SDK Build-Tools 35.0.0 are required. Android Studio's SDK Manager is the easiest way to install them.
+Once verified, you're ready to play.
 
-On first run, the Windows launcher fetches the official xdelta3 3.2.0 helper from `jmacd/xdelta` and verifies its release archive before use. No game data or translation patch is downloaded or uploaded by the builder.
+## Compatibility
 
-## Important boundaries
+Dirge Bridge v0.2.4 has been tested on a Samsung Galaxy S25 Ultra running Android 16.
 
-Do not commit or upload:
+Working features include graphics, English text, game audio, touchscreen controls, original checkpoint saving, and pause/resume functionality.
 
-- `game.jar`, `game.dex`, `game.jam`, or `game.sp`
-- `PACK*.JAR` / SD game data
-- private game-data ZIPs
-- signing keystores or passwords
-- private test recordings or reports unless deliberately reviewed for publication
-
-The included `.gitignore` blocks the common forms of those files, but it is still worth checking before every public release.
-
-## Repository layout
-
-- `src/` — Android bridge/runtime source
-- `res/` — Android resources and Dirge Bridge/Wakkan visual assets
-- `assets/` — expected payload metadata used by the importer
-- `compile-only/` — compile-time compatibility stubs
-- `tests/` — regression tests
-- `tools/` — build and DEX patch utilities
-- `verification/` — selected v0.2.4 verification records
-- `docs/` — preservation and release notes
+Compatibility with other Android devices and versions may vary.
 
 ## Translation attribution
 
-The currently supported English data set is based on the Lost Episode English translation work credited in the app to:
+The English translation used with Dirge Bridge is credited to:
 
-- Translation: TurquoiseHammer
-- Hacking: Yuvi
-- Playtesting: Yuvi, TurquoiseHammer, Odysseus
-- Special thanks: Shinra Archaeology
+- **Translation:** TurquoiseHammer
+- **Hacking:** Yuvi
+- **Playtesting:** Yuvi, TurquoiseHammer, Odysseus
+- **Special thanks:** Shinra Archaeology
 
 Dirge Bridge is an independent compatibility project and is not affiliated with Square Enix or NTT DOCOMO.
 
-## Building
-
-See [`docs/BUILDING.md`](docs/BUILDING.md).
-
-## License
-
-No repository-wide license has been selected yet. Third-party material retains its own notices; see `THIRD-PARTY-NOTICES.txt`.
+Third-party acknowledgments are available in [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).
