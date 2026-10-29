@@ -5,6 +5,19 @@
 
 Dirge Bridge is an independent Android compatibility project that makes **Final Fantasy VII: Dirge of Cerberus – Lost Episode** playable on modern Android devices, with English text, audio, and touchscreen controls.
 
+## Play with Omni Player
+
+For a streamlined way to play **Dirge of Cerberus: Lost Episode**, I recommend **Omni Player**.
+
+Omni includes this game's compatibility bridge and can import the complete English-patched game archive directly, without the standalone Windows Payload Builder. Follow the guide below to make sure you have the full package, including the SD chapter data.
+
+**[Download Omni Player](https://github.com/Wakkatobakka/Omni-Player/releases) · [Game files and setup guide](https://github.com/Wakkatobakka/Omni-Player/blob/main/GAME_GUIDE.md#dirge-of-cerberus-lost-episode)**
+
+Requires **Android 11+ / ARM64**. Original game files are not included.
+
+To use the dedicated standalone Dirge Bridge app, follow the instructions below.
+
+---
 ## Quick start
 
 1. Open the [Releases](https://github.com/Wakkatobakka/Dirge-Bridge/releases/tag/v0.2.4) page and download `Dirge_Bridge_v0.2.4.apk`.
